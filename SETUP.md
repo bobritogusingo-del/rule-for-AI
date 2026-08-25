@@ -13,6 +13,7 @@ Use GitHub to:
 - use `Premium/Sub` as the source for King/Premium links;
 - publish subscription-file edits using a dedicated branch and pull request;
 - update the same PR branch if edits are requested before merging.
+- after every subscription configuration update, purge the CDN cache so the changes are available without delay.
 
 Do not assume the agent can merge a pull request. A repository collaborator may need to merge it.
 
