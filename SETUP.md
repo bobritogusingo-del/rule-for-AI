@@ -5,12 +5,11 @@ This package captures the setup specific to this thread. It deliberately exclude
 ## What must be connected or logged in
 
 ### GitHub connection
-Connect a GitHub account with read and repository-content write access to the repositories used for subscriptions. The account should be able to read the repositories named `Lite` and `Premium` (sometimes called King in requests), and create branches and pull requests.
+Connect a GitHub account with read and repository-content write access to the repositories used for subscriptions. The account should be able to read the repository named `Premium` (sometimes called King in requests), and create branches and pull requests.
 
 Use GitHub to:
 
 - read the current `Sub` file before every change;
-- use `Lite/Sub` as the source for Lite links;
 - use `Premium/Sub` as the source for King/Premium links;
 - publish subscription-file edits using a dedicated branch and pull request;
 - update the same PR branch if edits are requested before merging.
@@ -36,7 +35,7 @@ A prior Happ authorization key was posted in chat. Treat it as potentially compr
 ## How to process a request for private links
 
 1. Extract the count, plan, requested labels, and device limit.
-2. Ask one clarification only if a material detail is missing (most often Lite versus King/Premium). Device limit defaults to 2.
+2. Ask one clarification only if a material detail is missing. Device limit defaults to 2.
 3. For every requested link independently, obtain the corresponding current `Sub` source from GitHub.
 4. Create an independent short link in Short.io.
 5. Create an independent Happ entry containing that short link. Do not consolidate several requested people into one entry.
@@ -81,4 +80,3 @@ The agent-wide custom instruction that was active when this package was made is 
 ## Current historical state (do not recreate automatically)
 
 - A pull request exists or existed for adding a Germany AI whitelist configuration to `Premium/Sub`; its merge status should be checked before any related changes.
-- One test Lite private subscription labeled “реклама” was disabled in Happ and its matching Short.io link was deleted. Do not re-enable or recreate it unless explicitly requested.
